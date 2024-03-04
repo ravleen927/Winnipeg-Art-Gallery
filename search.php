@@ -46,7 +46,7 @@ if (isset($_GET['query'])) {
                                 <div class="card mb-4 product-wap rounded-0">
                                     <div class="card rounded-0">
                                         <img class="card-img rounded-0 img-fluid"
-                                            src="dashboard/upload/<?= $fetch_post['image']; ?>" style="height:40vh; width:100%">
+                                            src="upload/<?= $fetch_post['image']; ?>" style="height:40vh; width:100%">
                                         <div
                                             class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                             <ul class="list-unstyled">
