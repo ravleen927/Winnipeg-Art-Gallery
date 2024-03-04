@@ -1,4 +1,4 @@
-<?php include 'components/cart.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -83,7 +83,7 @@
                     <ul class="nav navbar-nav   mx-lg-auto">
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.php">Published</a>
+                            <a class="nav-link" href="posts.php">Published</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.php">About Us</a>
@@ -93,15 +93,7 @@
                     </ul>
                 </div>
                 <div class="navbar align-self-center d-flex">
-                    <?php
-                    $count_wishlist_items = $conn->prepare("SELECT * FROM `wishlist` WHERE user_id = ?");
-                    $count_wishlist_items->execute([$user_id]);
-                    $total_wishlist_counts = $count_wishlist_items->rowCount();
-
-                    $count_cart_items = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
-                    $count_cart_items->execute([$user_id]);
-                    $total_cart_counts = $count_cart_items->rowCount();
-                    ?>
+                    
                     <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
                     <form action="search.php" method="GET">
                         <div class="input-group">
