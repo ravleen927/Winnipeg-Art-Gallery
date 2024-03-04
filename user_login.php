@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
 
         // Check the user role and redirect accordingly
         if ($row['role'] == 'Admin') {
-            header('location: dashboard/'); 
+            header('location: admin_dashboard/'); 
         } elseif ($row['role'] == 'Editor') {
             header('location: editor_dashboard/'); 
         } elseif ($row['role'] == 'Contributor') {
