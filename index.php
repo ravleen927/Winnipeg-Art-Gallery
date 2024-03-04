@@ -94,12 +94,12 @@ if (isset($_SESSION['user_id'])) {
     </div>
     <div class="row">
         <div class="col-12 col-md-4 p-4 mt-3">
-            <a href="shop.php"><img src="./assets/img/historical.jpg" class="rounded-circle img-fluid border"></a>
+            <a href="posts.php"><img src="./assets/img/historical.jpg" class="rounded-circle img-fluid border"></a>
             <h5 class="text-center mt-3 mb-3">Historical Moments</h5>
 
         </div>
         <div class="col-12 col-md-4 p-4 mt-3">
-            <a href="shop.php"><img src="./assets/img/seasonal.jpg" class="rounded-circle img-fluid border"></a>
+            <a href="posts.php"><img src="./assets/img/seasonal.jpg" class="rounded-circle img-fluid border"></a>
             <h2 class="h5 text-center mt-3 mb-3">Seasonal Changes</h2>
 
         </div>

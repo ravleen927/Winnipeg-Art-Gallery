@@ -51,7 +51,7 @@
                                 <input type="text" name="query" class="form-control" id="inputMobileSearch"
                                     placeholder="Type something ..." required>
                                 <div>
-                                    <button type="submit" class="btn-secondary input-group-text">Search</button>
+                                    <button type="submit" class="btn-success input-group-text">Search</button>
                                 </div>
                             </div>
                         </form>
