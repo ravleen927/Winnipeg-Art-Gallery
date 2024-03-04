@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $image = 'image.jpg';
 
     if (!empty($_FILES['image']['tmp_name'])) {
-        $uploadsDir = '.\upload/';
+        $uploadsDir = '..\upload/';
         $imageName = basename($_FILES['image']['name']);
         $image = $uploadsDir . $imageName;
         move_uploaded_file($_FILES['image']['tmp_name'], $image);
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     $stmt = $pdo->prepare("INSERT INTO posts (name, category, image, description) VALUES (?, ?, ?, ?)");
-    $stmt->execute([$name, $category, $imageFilename, $description]);
+    $stmt->execute([$name,  $category, $imageFilename, $description]);
 
     header('Location: add_post.php');
     $msg = "Post Deleted successfully ";
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <input type="file" id="image" name="image">
 
                         <label for="description">Description:</label>
-                        <textarea id="editor" name="description" rows="4"></textarea>
+                        <textarea id="description" name="description" rows="4"></textarea>
 
                         <button type="submit">Add Post</button>
                     </form>
@@ -87,24 +87,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 
-
-<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-<script>
-    // Initialize Quill
-    var quill = new Quill('#editor', {
-        theme: 'snow',  // Specify the theme ('snow' or 'bubble')
-        modules: {
-            toolbar: [
-                ['bold', 'italic', 'underline', 'strike'],        // Basic formatting
-                [{ 'header': 1 }, { 'header': 2 }],               // Header formatting
-                [{ 'list': 'ordered' }, { 'list': 'bullet' }],    // Lists
-                ['link', 'image'],                               // Links and images
-                ['clean']                                        // Remove formatting
-            ]
-        },
-        placeholder: 'Compose an epic...',
-    });
-</script>
 </body>
 
 </html>
