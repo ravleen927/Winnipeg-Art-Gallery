@@ -21,18 +21,7 @@
 </head>
 
 <body>
-    <?php
-    if (isset($message)) {
-        foreach ($message as $message) {
-            echo '
-         <div class="message text-center">
-            <span>' . $message . '</span>
-            <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
-         </div>
-         ';
-        }
-    }
-    ?>
+   
     <!-- Start Top Nav -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="captures_nav_top">
         <div class="container text-light">
@@ -116,11 +105,12 @@
                         ?>
                         
                         <a class="nav-icon position-relative text-decoration-none" href="update_user.php">
-                            <i class="fa fa-fw fa-arrow-down text-dark mr-3"></i>
-                            <span
+                        <span
                                 class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">
-                                <?= $fetch_profile["name"]; ?>
+                                <?= $fetch_profile["name"]; ?> Become Contributor
                             </span>
+                            <i class="fa fa-fw fa-arrow-down text-dark mr-3"></i>
+                            
 
                         </a>
                         <a class="nav-icon position-relative text-decoration-none text-danger"
@@ -144,3 +134,16 @@
         </div>
     </nav>
     <!-- Close Header -->
+
+    <?php
+    if (isset($message)) {
+        foreach ($message as $message) {
+            echo '
+         <div class="message text-center text-success">
+            <span>' . $message . '</span>
+            <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+         </div>
+         ';
+        }
+    }
+    ?>
