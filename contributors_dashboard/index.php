@@ -12,7 +12,7 @@ $stmt = $pdo->query("SELECT COUNT(*) FROM posts");
 $publishedArtCount = $stmt->fetchColumn();
 ?>
 
-<?php include('components/admin_header.php'); ?>
+<?php include('components/header.php'); ?>
 
 <div class="main-container">
     <div class="navcontainer">
