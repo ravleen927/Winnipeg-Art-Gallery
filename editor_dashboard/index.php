@@ -59,7 +59,7 @@ $publishedArtCount = $stmt->fetchColumn();
     </div>
 </div>
 
-<script src="script.js"></script>
+<script src="assets/script.js"></script>
 </body>
 
 </html>
