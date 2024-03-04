@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['name'], $_POST['descr
     echo '<script>alert("Category added successfully.");</script>';
 }
 ?>
-<?php include('components/admin_header.php'); ?>
+<?php include('components/header.php'); ?>
 
 <div class="main-container">
     <div class="navcontainer">
