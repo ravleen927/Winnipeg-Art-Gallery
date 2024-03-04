@@ -66,11 +66,6 @@ if (isset($_SESSION['user_id'])) {
                         <div class="col-md-4">
 
                             <form action="" method="post" class="box">
-                                <input type="hidden" name="pid" value="<?= $fetch_post['id']; ?>">
-                                <input type="hidden" name="name" value="<?= $fetch_post['name']; ?>">
-                                <input type="hidden" name="price" value="<?= $fetch_post['price']; ?>">
-                                <input type="hidden" name="image" value="<?= $fetch_post['image']; ?>">
-                                <input type="hidden" name="qty" class="qty" min="1" max="99" value="1">
                                 <div class="card mb-4 product-wap rounded-0">
                                     <div class="card rounded-0">
                                         <img class="card-img rounded-0 img-fluid"
@@ -122,6 +117,7 @@ if (isset($_SESSION['user_id'])) {
     </div>
 </div>
 <!-- End Content -->
+
 <section class="bg-light py-5">
     <div class="container my-4">
 
