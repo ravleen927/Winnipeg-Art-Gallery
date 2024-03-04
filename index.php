@@ -17,9 +17,6 @@ if (isset($_SESSION['user_id'])) {
 
 <?php include 'components/user_header.php'; ?>
 
-
-
-
 <!-- Start Banner Hero -->
 <div id="captures-hero-carousel" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
