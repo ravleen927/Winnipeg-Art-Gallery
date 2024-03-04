@@ -74,7 +74,7 @@ if (isset($_SESSION['user_id'])) {
                                             class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                             <ul class="list-unstyled">
                                                 <li><a class="btn btn-success text-white mt-2"
-                                                        href="posts_details.php?pid=<?= $fetch_post['id']; ?>"><i
+                                                        href="post_details.php?pid=<?= $fetch_post['id']; ?>"><i
                                                             class="far fa-eye"></i></a></li>
                                             </ul>
                                         </div>
