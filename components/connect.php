@@ -1,8 +1,8 @@
 
 <?php
 $host = 'localhost';
-$db_name = 'captures';
-$user_name = 'wag'; 
+$db_name = 'wag';
+$user_name = 'root'; 
 $user_password = '';
 
 $dsn = "mysql:host=$host;dbname=$db_name;charset=utf8mb4";
